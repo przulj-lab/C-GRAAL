@@ -124,12 +124,36 @@ Display usage directions:
 
 C-GRAAL produces alignments visualized as largest common connected components for various species pairs:
 
-- Yeast-Human alignment
-- C. jejuni-E. coli alignment
-- Mesorhizobium loti-Synechocystis sp PCC6803 alignment
-- F. tularensis - H. sapiens alignment
-- B. anthracis - H. sapiens alignment
-- Y. pestis - H. sapiens alignment
+<table>
+  <tr>
+    <td align="center">
+      <img src="C-GRAAL/figures/yeast-human.bmp" width="300"/><br/>
+      <b>Yeast-Human</b>
+    </td>
+    <td align="center">
+      <img src="C-GRAAL/figures/c_jejuni-e_coli.bmp" width="300"/><br/>
+      <b>C. jejuni - E. coli</b>
+    </td>
+    <td align="center">
+      <img src="C-GRAAL/figures/mes-syn.bmp" width="300"/><br/>
+      <b>M. loti - Synechocystis sp</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="C-GRAAL/figures/f_tularentis-human.jpg" width="300"/><br/>
+      <b>F. tularensis - H. sapiens</b>
+    </td>
+    <td align="center">
+      <img src="C-GRAAL/figures/b_anthracis-human.jpg" width="300"/><br/>
+      <b>B. anthracis - H. sapiens</b>
+    </td>
+    <td align="center">
+      <img src="C-GRAAL/figures/y_pestis-human.jpg" width="300"/><br/>
+      <b>Y. pestis - H. sapiens</b>
+    </td>
+  </tr>
+</table>
 
 ## Other Network Alignment Algorithms
 
