@@ -141,7 +141,7 @@ C-GRAAL produces alignments visualized as largest common connected components fo
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/f_tularentis-human.jpg" height="300" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/f_tularentis-human.jpg" width="300"/><br/>
       <b>F. tularensis - H. sapiens</b>
     </td>
     <td align="center">
