@@ -17,27 +17,27 @@ V. Memišević and N. Pržulj, "C-GRAAL: Common-Neighbors-Based Global GRAph ALi
 ## Resources
 
 ### Executables
-- **[C-GRAAL Unix64 version](link-to-executable)**
+- **[C-GRAAL Unix64 version](https://github.com/przulj-lab/C-GRAAL/)**
 
 ### Supplementary Material
-- **[Supplementary Material PDF](link-to-pdf)**
+- **[Supplementary Material PDF](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/C-GRAAL%28SupplementaryMaterial%29.pdf)**
 
 ### Networks
-- **[Yeast-Human](link)**
-- **[Human-Pathogen](link)**
-- **[Bacteria](link)**
-- **[Herpesviruses](link)**
+- **[Yeast-Human](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/yeast_human.zip)**
+- **[Human-Pathogen](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/human-pathogen.zip)**
+- **[Bacteria](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/bacteria.zip)**
+- **[Herpesviruses](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/virus.rar)**
 
 ### Alignments
-- **[Best Alignments](link)**
+- **[Best Alignments](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/best_alignments.xlsx)**
 
 ### Predictions
-- **[Yeast-Human](link)**
-- **[F. tularensis - H. sapiens](link)**
-- **[B. anthracis - H. sapiens](link)**
-- **[Y. pestis - H. sapiens](link)**
-- **[C. jejuni - E. coli](link)**
-- **[Mesorhizobium loti - Synechocystis sp PCC6803](link)**
+- **[Yeast-Human](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/index.html#:~:text=Predictions%3A-,Yeast%2DHuman,-F.tularensis%20%2D%20H)**
+- **[F. tularensis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/FH_predictions.xlsx)**
+- **[B. anthracis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/BH_predictions.xlsx)**
+- **[Y. pestis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/YH_predictions.xlsx)**
+- **[C. jejuni - E. coli](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/predictions_ECL_CJJ.xlsx)**
+- **[Mesorhizobium loti - Synechocystis sp PCC6803](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/predictions_SPP_MZL.xlsx)**
 
 *Note: If download links don't work when clicked, copy and paste the URLs directly into your browser's address bar.*
 
@@ -131,25 +131,25 @@ C-GRAAL produces alignments visualized as largest common connected components fo
       <b>Yeast-Human</b>
     </td>
     <td align="center">
-      <img src="C-GRAAL/figures/c_jejuni-e_coli.bmp" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/c_jejuni-e_coli.bmp" width="300"/><br/>
       <b>C. jejuni - E. coli</b>
     </td>
     <td align="center">
-      <img src="C-GRAAL/figures/mes-syn.bmp" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/mes-syn.bmp" width="300"/><br/>
       <b>M. loti - Synechocystis sp</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="C-GRAAL/figures/f_tularentis-human.jpg" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/f_tularentis-human.jpg" width="300"/><br/>
       <b>F. tularensis - H. sapiens</b>
     </td>
     <td align="center">
-      <img src="C-GRAAL/figures/b_anthracis-human.jpg" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/b_anthracis-human.jpg" width="300"/><br/>
       <b>B. anthracis - H. sapiens</b>
     </td>
     <td align="center">
-      <img src="C-GRAAL/figures/y_pestis-human.jpg" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/y_pestis-human.jpg" width="300"/><br/>
       <b>Y. pestis - H. sapiens</b>
     </td>
   </tr>
@@ -157,12 +157,11 @@ C-GRAAL produces alignments visualized as largest common connected components fo
 
 ## Other Network Alignment Algorithms
 
-- **[GRAAL](http://www0.cs.ucl.ac.uk/staff/natasa/GRAAL/)** - GRaph ALigner
-- **[MI-GRAAL](http://www0.cs.ucl.ac.uk/staff/natasa/MI-GRAAL/)** - Multi-species graph alignment
-- **[IsoRank and IsoRankN](http://www.ncbi.nlm.nih.gov/pubmed/18506038)**
-- **[PathBlast](http://www.ncbi.nlm.nih.gov/pubmed/14993207)**
-- **[GraphM package](https://www.ncbi.nlm.nih.gov/pubmed/19648138)**
-- **[Natalie](http://www.molgen.mpg.de/~natalie/)**
+- **[GRAAL](https://github.com/przulj-lab/GRAAL)** - GRaph ALigner
+- **[MI-GRAAL](https://github.com/przulj-lab/MI-GRAAL)** - Multi-species graph alignment
+- **[IsoRank and IsoRankN](https://cb.csail.mit.edu//mna/)**
+- **[PathBlast](https://karlan.com/)**
+- **[GraphM package](https://www.minesparis.psl.eu/cbio/)**
 
 ## Important Notes
 
