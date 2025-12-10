@@ -127,7 +127,7 @@ C-GRAAL produces alignments visualized as largest common connected components fo
 <table>
   <tr>
     <td align="center">
-      <img src="C-GRAAL/figures/yeast-human.bmp" width="300"/><br/>
+      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/yeast-human.bmp" width="300"/><br/>
       <b>Yeast-Human</b>
     </td>
     <td align="center">
