@@ -45,7 +45,7 @@ V. Memišević and N. Pržulj, "C-GRAAL: Common-Neighbors-Based Global GRAph ALi
 
 ```bash
 # Download and unpack C-GRAAL
-git clone https://github.com/przulj-lab/C-GRAAL/
+git clone https://github.com/przulj-lab/C-GRAAL.git
 cd CGRAAL_unix64
 chmod +x CGRAAL_unix64
 ```
