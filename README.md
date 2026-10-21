@@ -16,7 +16,7 @@ Corresponding author: Prof. N. Pržulj, natasa.przulj@mbzuai.ac.ae
 
 **About**
 - V. Memišević and N. Pržulj. C-GRAAL: Common-neighbors-based global GRAph ALignment of biological networks. *Integrative Biology* 4, 734–743 (2012). [PMID: 22234340](https://pubmed.ncbi.nlm.nih.gov/22234340/)
-- [Supplementary material (PDF)](Supplementary%20Material/C-GRAAL%28SupplementaryMaterial%29.pdf)
+- [Supplementary material (PDF)](Supplementary_Material/C-GRAAL%28SupplementaryMaterial%29.pdf)
 
 **Executables**
 - [C-GRAAL (Unix64 version)](Executables/CGRAAL_unix64)
