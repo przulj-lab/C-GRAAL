@@ -1,190 +1,104 @@
-# C-GRAAL: Common-Neighbors-Based Global GRAph ALignment
+<div align="center">
 
-A global graph alignment algorithm for biological networks based on common neighbors.
+<img src="images/header02.jpg" width="100%">
 
-## Authors
+# C-GRAAL: Common-Neighbors-Based Global GRAph ALignment Algorithm
 
-- Vesna Memisevic
-- Natasa Przulj
+**Supplementary material**
 
-**Corresponding Author:** Prof. Natasa Przulj  
-📧 natasa.przulj@mbzuai.ac.ae
+**Vesna Memišević and Nataša Pržulj**
 
-## Publication
+Corresponding author: Prof. N. Pržulj, natasa.przulj@mbzuai.ac.ae
 
-V. Memišević and N. Pržulj, "C-GRAAL: Common-Neighbors-Based Global GRAph ALignment of Biological Networks," *Integr. Biol.*, 4:734-743, 2012. PMCID: 22234340
+</div>
 
-## Resources
+## Downloads
 
-### Executables
-- **[C-GRAAL Unix64 version](https://github.com/przulj-lab/C-GRAAL/)**
+**About**
+- V. Memišević and N. Pržulj. C-GRAAL: Common-neighbors-based global GRAph ALignment of biological networks. *Integrative Biology* 4, 734–743 (2012). [PMID: 22234340](https://pubmed.ncbi.nlm.nih.gov/22234340/)
+- [Supplementary material (PDF)](Supplementary%20Material/C-GRAAL%28SupplementaryMaterial%29.pdf)
 
-### Supplementary Material
-- **[Supplementary Material PDF](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/C-GRAAL%28SupplementaryMaterial%29.pdf)**
+**Executables**
+- [C-GRAAL (Unix64 version)](Executables/CGRAAL_unix64)
+- [list2leda](Executables/list2leda)
 
-### Networks
-- **[Yeast-Human](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/yeast_human.zip)**
-- **[Human-Pathogen](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/human-pathogen.zip)**
-- **[Bacteria](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/bacteria.zip)**
-- **[Herpesviruses](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/networks/virus.rar)**
+**Networks**
+- [Yeast-Human](Networks/yeast_human.zip)
+- [Human-Pathogen](Networks/human-pathogen.zip)
+- [Bacteria](Networks/bacteria.zip)
+- [Herpesviruses](Networks/virus.rar)
 
-### Alignments
-- **[Best Alignments](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/best_alignments.xlsx)**
+**Alignments**
+- [Best alignments](Alignments/best_alignments.xlsx)
 
-### Predictions
-- **[Yeast-Human](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/index.html#:~:text=Predictions%3A-,Yeast%2DHuman,-F.tularensis%20%2D%20H)**
-- **[F. tularensis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/FH_predictions.xlsx)**
-- **[B. anthracis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/BH_predictions.xlsx)**
-- **[Y. pestis - H. sapiens](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/YH_predictions.xlsx)**
-- **[C. jejuni - E. coli](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/predictions_ECL_CJJ.xlsx)**
-- **[Mesorhizobium loti - Synechocystis sp PCC6803](http://www0.cs.ucl.ac.uk/staff/natasa/C-GRAAL/predictions_SPP_MZL.xlsx)**
+**Predictions**
+- [Yeast - Human](Predictions/predictions_Yeast_Human.xlsx)
+- [*F. tularensis* - *H. sapiens*](Predictions/FH_predictions.xlsx)
+- [*B. anthracis* - *H. sapiens*](Predictions/BH_predictions.xlsx)
+- [*Y. pestis* - *H. sapiens*](Predictions/YH_predictions.xlsx)
+- [*C. jejuni* - *E. coli*](Predictions/predictions_ECL_CJJ.xlsx)
+- [*Mesorhizobium loti* - *Synechocystis* sp. PCC6803](Predictions/predictions_SPP_MZL.xlsx)
 
-*Note: If download links don't work when clicked, copy and paste the URLs directly into your browser's address bar.*
+## How to run C-GRAAL
 
-## Installation
+- Download `CGRAAL_unix64` from the link above. C-GRAAL accepts networks in LEDA `.gw` format.
+- Run `./CGRAAL_unix64` without parameters to see usage directions.
 
-```bash
-# Download and unpack C-GRAAL
-git clone https://github.com/przulj-lab/C-GRAAL.git
-cd CGRAAL_unix64
-chmod +x CGRAAL_unix64
-```
-
-## Requirements
-
-- Unix/Linux 64-bit system
-- Networks in LEDA `.gw` format
-- Node similarity file
-
-## Usage
-
-### Basic Command
-
+Usage:
 ```bash
 ./CGRAAL_unix64 net1.gw net2.gw similarity.file output1.file output2.file
 ```
+- `net1.gw`: first network (`.gw` format)
+- `net2.gw`: second network (`.gw` format)
+- `similarity.file`: similarity between nodes in net1 and net2, in the format `nodeXNet1 nodeYNet2 similarity`
+- `output1.file`: alignment output as `node_Net1 node_Net2`, with nodes as numbers
+- `output2.file`: alignment output as `node_Net1 node_Net2`, with nodes as names
 
-### Parameters
+> [!IMPORTANT]
+> The number of nodes in the first network must not be greater than the number of nodes in the second network.
 
-- `net1.gw` - First network (LEDA .gw format)
-- `net2.gw` - Second network (LEDA .gw format)
-- `similarity.file` - Node similarity scores in format: `nodeXNet1 nodeYNet2 similarity`
-- `output1.file` - Alignment output with node numbers: `node_Net1 node_Net2`
-- `output2.file` - Alignment output with node names: `node_Net1 node_Net2`
+If you get a "permission denied" error, run `chmod +x CGRAAL_unix64` first.
 
-### Important Note
+## Converting an edge list to `.gw`
 
-⚠️ **The number of nodes in the first network must not be greater than the number of nodes in the second network!**
-
-### Example
-
-```bash
-./CGRAAL_unix64 yeast.gw human.gw blast_scores.txt alignment_numbers.txt alignment_names.txt
-```
-
-## Input File Formats
-
-### Network Format
-
-C-GRAAL accepts networks in LEDA `.gw` format.
-
-### Similarity File Format
-
-```
-nodeA_net1 nodeB_net2 0.95
-nodeC_net1 nodeD_net2 0.87
-nodeE_net1 nodeF_net2 0.76
-```
-
-## Converting Edge Lists to LEDA Format
-
-If your network is in edge list format:
+If your network is an edge list:
 ```
 node1 node2
 node3 node4
 ...
 ```
-
-Use the provided `list2leda` script:
-
+convert it with the `list2leda` script:
 ```bash
 ./list2leda edgelist.txt >> graph.gw
 ```
+Self-loops, edge directions and duplicate edges are ignored.
 
-**Note:** Self-loops, directionality, and double edges will be ignored during conversion.
+## Figures
 
-## Help
-
-Display usage directions:
-```bash
-./CGRAAL_unix64
-```
-
-## Visualization Results
-
-C-GRAAL produces alignments visualized as largest common connected components for various species pairs:
+The largest common connected component of the best alignment for each pair:
 
 <table>
   <tr>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/yeast-human.bmp" width="300"/><br/>
-      <b>Yeast-Human</b>
-    </td>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/c_jejuni-e_coli.bmp" width="300"/><br/>
-      <b>C. jejuni - E. coli</b>
-    </td>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/mes-syn.bmp" width="300"/><br/>
-      <b>M. loti - Synechocystis sp</b>
-    </td>
+    <td align="center"><img src="images/yeast-human.bmp" width="250"><br>Yeast - Human</td>
+    <td align="center"><img src="images/c_jejuni-e_coli.bmp" width="250"><br><i>C. jejuni</i> - <i>E. coli</i></td>
+    <td align="center"><img src="images/mes-syn.bmp" width="250"><br><i>M. loti</i> - <i>Synechocystis</i> sp. PCC6803</td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/f_tularentis-human.jpg" width="300"/><br/>
-      <b>F. tularensis - H. sapiens</b>
-    </td>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/b_anthracis-human.jpg" width="300"/><br/>
-      <b>B. anthracis - H. sapiens</b>
-    </td>
-    <td align="center">
-      <img src="https://github.com/przulj-lab/C-GRAAL/blob/main/figures/y_pestis-human.jpg" width="300"/><br/>
-      <b>Y. pestis - H. sapiens</b>
-    </td>
+    <td align="center"><img src="images/f_tularentis-human.jpg" width="250"><br><i>F. tularensis</i> - <i>H. sapiens</i></td>
+    <td align="center"><img src="images/b_anthracis-human.jpg" width="250"><br><i>B. anthracis</i> - <i>H. sapiens</i></td>
+    <td align="center"><img src="images/y_pestis-human.jpg" width="250"><br><i>Y. pestis</i> - <i>H. sapiens</i></td>
   </tr>
 </table>
 
-## Other Network Alignment Algorithms
+## Other network alignment algorithms
 
-- **[GRAAL](https://github.com/przulj-lab/GRAAL)** - GRaph ALigner
-- **[MI-GRAAL](https://github.com/przulj-lab/MI-GRAAL)** - Multi-species graph alignment
-- **[IsoRank and IsoRankN](https://cb.csail.mit.edu//mna/)**
-- **[PathBlast](https://karlan.com/)**
-- **[GraphM package](https://www.minesparis.psl.eu/cbio/)**
+- [GRAph ALigner (GRAAL)](https://github.com/przulj-lab/GRAAL)
+- [MI-GRAAL](https://github.com/przulj-lab/MI-GRAAL)
+- [IsoRank and IsoRankN](https://cb.csail.mit.edu/cb/mna/)
+- [PathBlast](https://karlan.com/)
+- [GraphM package](https://www.minesparis.psl.eu/cbio/)
+- [Natalie](https://www.mi.fu-berlin.de/w/LiSA/Natalie)
 
-## Important Notes
+## Notes
 
-### P-value Calculations
-
-All p-values presented in the paper were calculated using **MATLAB 2007**. Newer MATLAB versions use a different output precision format, which may result in slightly different p-values:
-
-- MATLAB 2007 format: `1.7E-9`
-- Newer versions format: `0.0`
-
-This is due to precision differences, not algorithmic changes.
-
-## Citation
-
-If you use this code or data in your research, please cite:
-
-```
-V. Memišević and N. Pržulj
-C-GRAAL: Common-Neighbors-Based Global GRAph ALignment of Biological Networks
-Integrative Biology, 4:734-743, 2012
-PMCID: 22234340
-```
-
-## Contact
-
-For questions or issues, please contact Prof. Natasa Przulj at natasa.przulj@mbzuai.ac.ae
+All p-values in the paper were calculated with MATLAB 2007. Newer MATLAB versions use a different output precision, so their p-values may differ from those obtained with the 2007 version (e.g. old version: 1.7E-9, newer version: 0.0).
