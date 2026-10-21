@@ -79,16 +79,14 @@ The largest common connected component of the best alignment for each pair:
 
 <table>
   <tr>
-    <td align="center"><img src="images/yeast-human.bmp" width="400"><br>Yeast - Human</td>
-    <td align="center"><img src="images/c_jejuni-e_coli.bmp" width="400"><br><i>C. jejuni</i> - <i>E. coli</i></td>
+    <td align="center"><img src="images/yeast-human.bmp" width="250"><br>Yeast - Human</td>
+    <td align="center"><img src="images/c_jejuni-e_coli.bmp" width="250"><br><i>C. jejuni</i> - <i>E. coli</i></td>
+    <td align="center"><img src="images/mes-syn.bmp" width="250"><br><i>M. loti</i> - <i>Synechocystis</i> sp. PCC6803</td>
   </tr>
   <tr>
-    <td align="center"><img src="images/mes-syn.bmp" width="400"><br><i>M. loti</i> - <i>Synechocystis</i> sp. PCC6803</td>
-    <td align="center"><img src="images/f_tularentis-human.jpg" width="400"><br><i>F. tularensis</i> - <i>H. sapiens</i></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="images/b_anthracis-human.jpg" width="400"><br><i>B. anthracis</i> - <i>H. sapiens</i></td>
-    <td align="center"><img src="images/y_pestis-human.jpg" width="400"><br><i>Y. pestis</i> - <i>H. sapiens</i></td>
+    <td align="center"><img src="images/f_tularentis-human.jpg" width="250"><br><i>F. tularensis</i> - <i>H. sapiens</i></td>
+    <td align="center"><img src="images/b_anthracis-human.jpg" width="250"><br><i>B. anthracis</i> - <i>H. sapiens</i></td>
+    <td align="center"><img src="images/y_pestis-human.jpg" width="250"><br><i>Y. pestis</i> - <i>H. sapiens</i></td>
   </tr>
 </table>
 
